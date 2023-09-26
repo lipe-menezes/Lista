@@ -17,16 +17,14 @@ int main() {
     int encontrarcopa = 0;
     
     int i;
-
-    // Verificar se o ano fornecido está na lista de anos olímpicos
+    
     for (; i < numjogosolimpicos; i++) {
         if (ano == jogosolimpicos[i]) {
             encontrarjogosolimpicos = 1;
             break;
         }
     }
-
-    // Verificar se o ano fornecido está na lista de anos da Copa do Mundo
+    
     for (; i < numcopadomundo; i++) {
         if (ano == copadomundo[i]) {
             encontrarcopa = 1;

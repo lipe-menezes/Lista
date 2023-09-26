@@ -10,8 +10,7 @@ int main() {
     } else {
         printf("O número e ímpar.\n");
     }
-
-    // Calcular a soma dos dígitos
+    
     int soma = 0;
     int originalN = num;
 
