@@ -1,12 +1,27 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main (){
+int main() {
     int num;
+    printf("Digite um numero: ");
+    scanf("%d", &num);
 
-    printf("Digite um valor:\n");
-    scanf("%i", &num);
-    if(num %2 == 0)
-    printf("O valor informado e par.\n");
-else 
-printf("O valor informado é impar");
+    if (num % 2 == 0) {
+        printf("O numero e par.\n");
+    } else {
+        printf("O número e ímpar.\n");
+    }
+
+    // Calcular a soma dos dígitos
+    int soma = 0;
+    int originalN = num;
+
+    while (num != 0) {
+        int digito = num % 10;
+        soma += digito;
+        num /= 10;
+    }
+
+    printf("A soma dos digitos '%d' e: %d\n", originalN, soma);
+
+    return 0;
 }
