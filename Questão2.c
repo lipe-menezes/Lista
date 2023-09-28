@@ -2,13 +2,13 @@
 
 int main() {
     int num;
-    printf("Digite um numero: ");
+    
     scanf("%d", &num);
 
     if (num % 2 == 0) {
-        printf("O numero e par.\n");
+        printf(" %d eh par\n", num);
     } else {
-        printf("O número e ímpar.\n");
+        printf(" %d eh impar\n", num);
     }
     
     int soma = 0;
@@ -20,7 +20,7 @@ int main() {
         num /= 10;
     }
 
-    printf("A soma dos digitos '%d' e: %d\n", originalN, soma);
+    printf("A soma dos algarismos de %d eh %d\n", originalN, soma);
 
     return 0;
 }

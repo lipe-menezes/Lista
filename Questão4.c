@@ -4,10 +4,10 @@ int main() {
     char experiencia;
     float salario, aumento;
 
-    printf("Nivel de experiencia (a, b ou c): ");
+    
     scanf(" %c", &experiencia);
 
-    printf("Digite o salario atual: ");
+    
     scanf("%f", &salario);
 
     switch (experiencia) {
@@ -26,7 +26,7 @@ int main() {
     }
     float salario_atualizado = salario + aumento;
     
-    printf("O novo salario e: %.2f\n", salario_atualizado);
+    printf("R$ %.2f\n", salario_atualizado);
 
     return 0;
 }
